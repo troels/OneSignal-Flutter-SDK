@@ -15,7 +15,7 @@ class _MyAppState extends State<MyApp> {
   String _debugLabelString = "";
   String? _emailAddress;
   String? _externalUserId;
-  bool _enableConsentButton = false;
+  bool? _enableConsentButton = false;
 
   // CHANGE THIS parameter to true if you want to test GDPR privacy consent
   bool _requireConsent = true;
@@ -83,7 +83,7 @@ class _MyAppState extends State<MyApp> {
     OneSignal.shared
         .setInFocusDisplayType(OSNotificationDisplayType.notification);
 
-    bool requiresConsent = await OneSignal.shared.requiresUserPrivacyConsent();
+    bool? requiresConsent = await OneSignal.shared.requiresUserPrivacyConsent();
 
     this.setState(() {
       _enableConsentButton = requiresConsent;
@@ -261,7 +261,7 @@ class _MyAppState extends State<MyApp> {
     OneSignal.shared.removeTriggerForKey("trigger_2");
 
     // Get the value for a trigger by its key
-    Object triggerValue = await OneSignal.shared.getTriggerValueForKey("trigger_3");
+    Object? triggerValue = await OneSignal.shared.getTriggerValueForKey("trigger_3");
     print("'trigger_3' key trigger value: " + triggerValue.toString());
 
     // Create a list and bulk remove triggers based on keys supplied
@@ -315,21 +315,21 @@ class _MyAppState extends State<MyApp> {
                 children: [
                   new TableRow(children: [
                     new OneSignalButton(
-                        "Get Tags", _handleGetTags, !_enableConsentButton)
+                        "Get Tags", _handleGetTags, !_enableConsentButton!)
                   ]),
                   new TableRow(children: [
                     new OneSignalButton(
-                        "Send Tags", _handleSendTags, !_enableConsentButton)
+                        "Send Tags", _handleSendTags, !_enableConsentButton!)
                   ]),
                   new TableRow(children: [
                     new OneSignalButton("Prompt for Push Permission",
-                        _handlePromptForPushPermission, !_enableConsentButton)
+                        _handlePromptForPushPermission, !_enableConsentButton!)
                   ]),
                   new TableRow(children: [
                     new OneSignalButton(
                         "Print Permission Subscription State",
                         _handleGetPermissionSubscriptionState,
-                        !_enableConsentButton)
+                        !_enableConsentButton!)
                   ]),
                   new TableRow(children: [
                     new TextField(
@@ -353,11 +353,11 @@ class _MyAppState extends State<MyApp> {
                   ]),
                   new TableRow(children: [
                     new OneSignalButton(
-                        "Set Email", _handleSetEmail, !_enableConsentButton)
+                        "Set Email", _handleSetEmail, !_enableConsentButton!)
                   ]),
                   new TableRow(children: [
                     new OneSignalButton("Logout Email", _handleLogoutEmail,
-                        !_enableConsentButton)
+                        !_enableConsentButton!)
                   ]),
                   new TableRow(children: [
                     new OneSignalButton("Provide GDPR Consent", _handleConsent,
@@ -365,19 +365,19 @@ class _MyAppState extends State<MyApp> {
                   ]),
                   new TableRow(children: [
                     new OneSignalButton("Set Location Shared",
-                        _handleSetLocationShared, !_enableConsentButton)
+                        _handleSetLocationShared, !_enableConsentButton!)
                   ]),
                   new TableRow(children: [
                     new OneSignalButton(
-                        "Delete Tag", _handleDeleteTag, !_enableConsentButton)
+                        "Delete Tag", _handleDeleteTag, !_enableConsentButton!)
                   ]),
                   new TableRow(children: [
                     new OneSignalButton("Post Notification",
-                        _handleSendNotification, !_enableConsentButton)
+                        _handleSendNotification, !_enableConsentButton!)
                   ]),
                   new TableRow(children: [
                     new OneSignalButton("Post Silent Notification",
-                        _handleSendSilentNotification, !_enableConsentButton)
+                        _handleSendSilentNotification, !_enableConsentButton!)
                   ]),
                   new TableRow(children: [
                     new TextField(
@@ -401,11 +401,11 @@ class _MyAppState extends State<MyApp> {
                   ]),
                   new TableRow(children: [
                     new OneSignalButton(
-                        "Set External User ID", _handleSetExternalUserId, !_enableConsentButton)
+                        "Set External User ID", _handleSetExternalUserId, !_enableConsentButton!)
                   ]),
                   new TableRow(children: [
                     new OneSignalButton(
-                        "Remove External User ID", _handleRemoveExternalUserId, !_enableConsentButton)
+                        "Remove External User ID", _handleRemoveExternalUserId, !_enableConsentButton!)
                   ]),
                   new TableRow(children: [
                     new Container(
@@ -426,7 +426,7 @@ typedef void OnButtonPressed();
 class OneSignalButton extends StatefulWidget {
   final String title;
   final OnButtonPressed onPressed;
-  final bool enabled;
+  final bool? enabled;
 
   OneSignalButton(this.title, this.onPressed, this.enabled);
 
@@ -447,7 +447,7 @@ class OneSignalButtonState extends State<OneSignalButton> {
             textColor: Colors.white,
             padding: EdgeInsets.all(8.0),
             child: new Text(widget.title),
-            onPressed: widget.enabled ? widget.onPressed : null,
+            onPressed: widget.enabled! ? widget.onPressed : null,
           )
         ]),
         new TableRow(children: [

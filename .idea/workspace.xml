@@ -1,45 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="onesignal.dart" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/onesignal.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="ChangeListManager">
+    <list default="true" id="b585d143-2af9-4389-991c-38b2b2a83dae" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/onesignal_flutter.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/onesignal_flutter.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/create_notification.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/create_notification.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/in_app_message.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/in_app_message.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/notification.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/notification.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/outcome_event.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/outcome_event.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/permission.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/permission.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/subscription.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/subscription.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/utils.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/utils.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/create_notification_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/create_notification_test.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/mock_channel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/mock_channel.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/notification_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/notification_test.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/onesignalflutter_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/onesignalflutter_test.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/subscription_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/subscription_test.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_data.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_data.dart" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ToolWindowManager">
-    <editor active="true" />
-    <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-    </layout>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <option name="show-excluded-files" value="false" />
-      </pane>
-    </panes>
+  <component name="ProjectId" id="1pzD3uAMEaOLIYDSIOYWD9bmDtF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="AnalyzeApkAction.lastApkPath" value="$PROJECT_DIR$" />
     <property name="dart.analysis.tool.window.force.activate" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b585d143-2af9-4389-991c-38b2b2a83dae" name="Default Changelist" comment="" />
+      <created>1616176830017</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616176830017</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="647" y="290" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1616176926045">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="647" y="290" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1616176926045" />
+    <state x="747" y="297" key="FileChooserDialogImpl" timestamp="1616177170728">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="747" y="297" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1616177170728" />
+    <state x="600" y="340" key="git4idea.merge.GitPullDialog" timestamp="1616177142115">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="600" y="340" key="git4idea.merge.GitPullDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1616177142115" />
   </component>
 </project>

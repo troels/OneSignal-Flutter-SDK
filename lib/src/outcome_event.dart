@@ -27,10 +27,10 @@ class OSOutcomeEvent extends JSONStringRepresentable {
   List<String> notificationIds = [];
 
   // Name of the outcome event
-  String name = "";
+  String? name = "";
 
   // Time in millis when the outcome was sent
-  int timestamp = 0;
+  int? timestamp = 0;
 
   // Value if one exists (default 0.0) that was sent with the outcome
   double weight = 0.0;
@@ -59,12 +59,12 @@ class OSOutcomeEvent extends JSONStringRepresentable {
 
       // Make sure name exists
       this.name = outcome.containsKey("id") && outcome["id"] != null ?
-                  outcome["id"] as String :
+                  outcome["id"] as String? :
                   "";
 
       // Make sure timestamp exists
       this.timestamp = outcome.containsKey("timestamp") && outcome["timestamp"] != null ?
-                       outcome["timestamp"] as int :
+                       outcome["timestamp"] as int? :
                        0;
 
       // Make sure weight exists

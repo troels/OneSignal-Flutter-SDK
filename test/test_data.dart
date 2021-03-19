@@ -7,10 +7,10 @@ import 'package:onesignal_flutter/src/defines.dart';
 class TestData {
   static final file = new File(Directory.current.path + '/test.json');
   static final json =
-      JsonDecoder().convert(file.readAsStringSync()) as Map<dynamic, dynamic>;
+      JsonDecoder().convert(file.readAsStringSync()) as Map<dynamic, dynamic>?;
 
   static dynamic jsonForTest(String test) {
-    return json[test];
+    return json![test];
   }
 }
 
